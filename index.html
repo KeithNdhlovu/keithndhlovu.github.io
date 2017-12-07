@@ -49,6 +49,7 @@
                             <br/>
                             <!-- <a href="http://www.brainyquote.com/quotes/quotes/a/alberteins148878.html">@brainyquote</a> -->
                         </p>
+                        <div id="adyo-div-1" style="width:300px; height:250px; background:red"></div>
                         <a href="https://www.facebook.com/keith.kndhlovu" class="btn btn-circle page-scroll">
                             <i class="fa fa-facebook animated"></i>
                         </a>
@@ -70,6 +71,37 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
+    <script type="text/javascript">
+        (function(){
+          var s = document.createElement('script'); 
+          var protocol = (window.location.protocol === 'https:' ? 'https:' : 'http:');
+          s.type = 'text/javascript';
+          s.src = protocol.concat('//cdn.adyo.co.za/adyo.min.js');
+          s.async = true;
+          s.onload = s.onreadystatechange = () => {
+            var rs = this.readyState; 
+            if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+
+            try {
+              Adyo = window.Adyo || {}; Adyo.ads = Adyo.ads || [];
+              Adyo.ads.push({
+                handler: function(params) { 
+                  Adyo.init(params); 
+                },
+                params: { 
+                  dom_id: 'adyo-div-1',
+                  network_id: 1, // YOUR NETWORK ID GOES HERE
+                  zone_id: 13, // YOUR ZONE ID GOES HERE
+                }
+              });
+
+            } catch (e) {};
+          }
+
+          var n = document.getElementsByTagName('script')[0]; 
+          n.parentNode.insertBefore(s, n);
+        }());
+    </script>
 </body>
 
 </html>
