@@ -97,4 +97,31 @@ body.theme.white {
   border: 1px solid lightgrey;
 }
 
+.top-navigation .brand-logo {
+  height: 64px;
+}
+.top-navigation .brand-logo .logo {
+  background: url(../images/f_logo_RGB-Blue_100.png);
+  width: 50px;
+  height: 64px;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.top-navigation .input-field {
+  margin-left: 80px;
+}
+.top-navigation .input-field .prefix {
+  top: 0;
+}
+.top-navigation nav {
+  background-color: white;
+}
+.top-navigation .material-icons {
+  color: gray;
+}
+.top-navigation .btn {
+  box-shadow: none !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
