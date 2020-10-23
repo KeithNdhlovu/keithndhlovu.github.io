@@ -122,6 +122,7 @@ body.theme.white {
 }
 .top-navigation .btn {
   box-shadow: none !important;
+  margin: 0 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
