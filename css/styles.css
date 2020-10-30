@@ -99,9 +99,10 @@ body.theme.white {
 
 .top-navigation .brand-logo {
   height: 64px;
+  left: 20px;
 }
 .top-navigation .brand-logo .logo {
-  background: url(../images/f_logo_RGB-Blue_100.png);
+  background: url(../images/fb_logo.png);
   width: 50px;
   height: 64px;
   background-size: 80%;
@@ -113,6 +114,39 @@ body.theme.white {
 }
 .top-navigation .input-field .prefix {
   top: 0;
+}
+.top-navigation .search-container .search-list {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 64px;
+  height: 64px;
+}
+.top-navigation .search-container .search-field {
+  display: flex;
+}
+.top-navigation .search-container .search-field input {
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #efefef;
+  color: #555555;
+  outline: none;
+  font-size: 16px;
+}
+.top-navigation .search-container .search-field input::-webkit-input-placeholder {
+  color: #929292;
+}
+.top-navigation .search-container .search-field input:-moz-placeholder {
+  color: #929292;
+}
+.top-navigation .search-container .search-field input::-moz-placeholder {
+  color: #929292;
+}
+.top-navigation .search-container .search-field input::-ms-placeholder {
+  color: #929292;
+}
+.top-navigation .search-container .search-field input::placeholder {
+  color: #929292;
 }
 .top-navigation nav {
   background-color: white;

@@ -1,3 +1,22 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &::-ms-placeholder {
+        @content
+    }
+    &::placeholder {
+        @content
+    }
+}
+
+
 html, body {
     height: 100%;
     width: 100%;
@@ -115,8 +134,10 @@ body {
 .top-navigation {
     .brand-logo {
         height: 64px;
+        left: 20px;
+
         .logo {
-            background: url(../images/f_logo_RGB-Blue_100.png);
+            background: url(../images/fb_logo.png);
             width: 50px;
             height: 64px;
             background-size: 80%;
@@ -130,6 +151,33 @@ body {
 
         .prefix {
             top: 0;
+        }
+    }
+
+    .search-container {
+        .search-list {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 64px;
+            height: 64px;
+        }
+
+        .search-field {
+            display: flex;
+
+            input {
+                border-radius: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background: #efefef;
+                color: #555555;
+                outline: none;
+                font-size: 16px;
+
+                @include placeholder() {
+                    color: #929292;
+                }
+            }
         }
     }
 
