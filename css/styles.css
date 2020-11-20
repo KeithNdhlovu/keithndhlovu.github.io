@@ -13,11 +13,11 @@ body.theme.white {
 }
 
 .header-container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 .header-container .cover-image {
-  background-image: url(../images/cover.jpg);
+  background-image: url(../images/cover_2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,14 +64,13 @@ body.theme.white {
   right: 15px;
   bottom: 10px;
   cursor: pointer;
-  font-weight: bold;
   font-family: inherit;
 }
 
 .button {
   background: #e8e8e8;
   padding: 10px;
-  width: initial;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -97,6 +96,10 @@ body.theme.white {
   border: 1px solid lightgrey;
 }
 
+.top-navigation {
+  position: relative;
+  z-index: 2;
+}
 .top-navigation .brand-logo {
   height: 64px;
   left: 20px;
@@ -157,6 +160,44 @@ body.theme.white {
 .top-navigation .btn {
   box-shadow: none !important;
   margin: 0 8px;
+}
+
+.mg-minus-10 {
+  margin-top: -10px;
+}
+.mg-minus-20 {
+  margin-top: -20px;
+}
+
+.tabs .indicator {
+  background-color: #448aff;
+}
+.tabs .tab a {
+  color: gray;
+  text-transform: none;
+}
+.tabs .tab a:hover {
+  font-weight: 500;
+  color: gray;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+}
+.tabs .tab a.active {
+  font-weight: 500;
+  color: #448aff;
+}
+.tabs .tab a.active:hover, .tabs .tab a.active:active, .tabs .tab a.active:focus {
+  color: #448aff;
+  border-radius: none;
+  background-color: transparent;
+}
+
+.min-h-200 {
+  min-height: 200px;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
